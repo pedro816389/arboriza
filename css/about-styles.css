@@ -1,0 +1,289 @@
+/* Estilos adicionais para a página Sobre Nós */
+
+.page-header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 100px 0 50px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.about-detailed {
+    padding: var(--section-padding);
+    background-color: var(--background-color);
+}
+
+.about-story {
+    margin-bottom: 60px;
+}
+
+.about-story h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.about-story h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.about-story p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-mission {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.mission-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.mission-item:hover {
+    transform: translateY(-10px);
+}
+
+.mission-item h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.mission-item h3 i {
+    margin-right: 15px;
+    color: var(--secondary-color);
+}
+
+.mission-item p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.mission-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mission-item ul li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    font-size: 1.05rem;
+}
+
+.mission-item ul li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+}
+
+.founder-profile {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.founder-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.founder-info h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.founder-info h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.founder-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.founder-title {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.founder-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.expertise-areas {
+    margin-bottom: 60px;
+}
+
+.expertise-areas h2 {
+    color: var(--primary-color);
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.expertise-areas h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.expertise-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.expertise-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.expertise-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.expertise-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.expertise-card p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.cta-section {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-section .btn {
+    background-color: var(--light-text);
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: 15px 40px;
+}
+
+.cta-section .btn:hover {
+    background-color: var(--background-color);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .founder-profile {
+        grid-template-columns: 1fr;
+    }
+    
+    .founder-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header {
+        padding: 120px 0 40px;
+    }
+    
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-story h2,
+    .founder-info h2,
+    .expertise-areas h2 {
+        font-size: 1.8rem;
+    }
+    
+    .founder-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .mission-item,
+    .expertise-card {
+        padding: 20px;
+    }
+    
+    .cta-section h2 {
+        font-size: 2rem;
+    }
+}

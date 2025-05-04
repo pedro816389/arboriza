@@ -1,0 +1,455 @@
+/* Estilos para a página de Estudo de Caso */
+
+.case-study-header {
+    background-color: var(--primary-color);
+    color: var(--light-text);
+    padding: 100px 0 50px;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.case-study-header h1 {
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.case-study-header .subtitle {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Conteúdo do Estudo de Caso */
+.case-study-content {
+    padding: var(--section-padding);
+    background-color: var(--background-color);
+}
+
+/* Visão Geral */
+.case-study-overview {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-bottom: 60px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.overview-image {
+    height: 100%;
+    overflow: hidden;
+}
+
+.overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overview-details {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.detail-item h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.detail-item h3 i {
+    margin-right: 10px;
+    color: var(--secondary-color);
+}
+
+.detail-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Seções do Estudo de Caso */
+.case-study-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.case-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: var(--box-shadow);
+}
+
+.case-section h2 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.case-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.case-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Características da Solução */
+.solution-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-item {
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--background-color);
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.feature-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Processo de Instalação */
+.installation-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.step-item {
+    position: relative;
+    padding: 30px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 30px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.step-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    padding-top: 10px;
+}
+
+.step-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Galeria de Instalação */
+.installation-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.gallery-item {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.caption {
+    padding: 15px;
+    background-color: white;
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* Benefícios */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.benefit-item {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.benefit-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.benefit-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* Aplicações */
+.applications-list {
+    margin-top: 40px;
+}
+
+.application-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: var(--background-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.application-item:hover {
+    transform: translateX(10px);
+}
+
+.application-icon {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+    min-width: 50px;
+    text-align: center;
+}
+
+.application-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.application-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* CTA */
+.case-study-cta {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 60px;
+    border-radius: 10px;
+    margin-top: 60px;
+}
+
+.case-study-cta h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.case-study-cta p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.case-study-cta .btn {
+    background-color: white;
+    color: var(--primary-color);
+    font-size: 1.1rem;
+    padding: 15px 40px;
+}
+
+.case-study-cta .btn:hover {
+    background-color: var(--background-color);
+}
+
+/* Serviços Relacionados */
+.related-services {
+    padding: var(--section-padding);
+    background-color: white;
+}
+
+.related-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.related-service-item {
+    background-color: var(--background-color);
+    padding: 30px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--box-shadow);
+}
+
+.related-service-item .service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.related-service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.related-service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.related-service-item .read-more {
+    color: var(--primary-color);
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.related-service-item .read-more i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.related-service-item .read-more:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .case-study-overview {
+        grid-template-columns: 1fr;
+    }
+    
+    .overview-image {
+        height: 300px;
+    }
+    
+    .overview-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .installation-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .case-study-header {
+        padding: 120px 0 40px;
+    }
+    
+    .case-study-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .case-study-header .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .case-section {
+        padding: 30px 20px;
+    }
+    
+    .case-section h2 {
+        font-size: 1.8rem;
+    }
+    
+    .case-study-cta {
+        padding: 40px 20px;
+    }
+    
+    .case-study-cta h2 {
+        font-size: 1.8rem;
+    }
+}

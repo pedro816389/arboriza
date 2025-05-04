@@ -1,0 +1,11 @@
+--2025-04-23 20:56:42--  https://img.freepik.com/fotos-gratis/vista-da-cidade-com-arvores-verdes_23-2148214615.jpg?w=1380
+Resolving img.freepik.com (img.freepik.com)... 23.215.0.208, 23.215.0.206, 2600:1408:ec00:15::17d7:d0, ...
+Connecting to img.freepik.com (img.freepik.com)|23.215.0.208|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 192232 (188K) [image/jpeg]
+Saving to: ‘hero-bg.jpg’
+
+hero-bg.jpg           0%[                    ]       0  --.-KB/s               hero-bg.jpg          13%[=>                  ]  24.96K   111KB/s               hero-bg.jpg          55%[==========>         ] 103.98K   243KB/s               hero-bg.jpg         100%[===================>] 187.73K   383KB/s    in 0.5s    
+
+2025-04-23 20:56:45 (383 KB/s) - ‘hero-bg.jpg’ saved [192232/192232]
+

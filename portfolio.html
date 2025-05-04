@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Arboriza</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/portfolio-styles.css">
+    <link rel="stylesheet" href="css/visual-improvements.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Arboriza - Engenharia e Arborização Urbana">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="portfolio.html" class="active">Portfólio</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nosso Portfólio</h1>
+            <p>Conheça alguns dos nossos projetos realizados</p>
+        </div>
+    </section>
+
+    <section class="portfolio-filter">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="poda">Poda Técnica</button>
+                <button class="filter-btn" data-filter="remocao">Remoção</button>
+                <button class="filter-btn" data-filter="arborizacao">Arborização</button>
+                <button class="filter-btn" data-filter="barreira">Barreira de Raiz</button>
+                <button class="filter-btn" data-filter="laudo">Laudos</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio-grid">
+        <div class="container">
+            <div class="projects-container">
+                <!-- Projeto 1 -->
+                <div class="project-item" data-category="arborizacao">
+                    <div class="project-image">
+                        <img src="images/projetos-reais/trabalho_altura_1.jpg" alt="Trabalho em Altura - Poda Técnica">
+                        <div class="project-overlay">
+                            <div class="project-category">Poda Técnica</div>
+                            <a href="#project1" class="view-project">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Poda Técnica em Altura</h3>
+                        <p>São Paulo, SP</p>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 -->
+                <div class="project-item" data-category="poda">
+                    <div class="project-image">
+                        <img src="images/projetos-reais/trabalho_altura_2.jpg" alt="Remoção de Galhos com Motosserra">
+                        <div class="project-overlay">
+                            <div class="project-category">Poda Técnica</div>
+                            <a href="#project2" class="view-project">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Remoção de Galhos com Motosserra</h3>
+                        <p>Campinas, SP</p>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 -->
+                <div class="project-item" data-category="remocao">
+                    <div class="project-image">
+                        <img src="images/projetos-reais/trabalho_altura_3.jpg" alt="Trabalho em Altura - Árvore de Grande Porte">
+                        <div class="project-overlay">
+                            <div class="project-category">Trabalho em Altura</div>
+                            <a href="#project3" class="view-project">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Manejo em Árvore de Grande Porte</h3>
+                        <p>Ribeirão Preto, SP</p>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 - Barreira de Raiz -->
+                <div class="project-item" data-category="barreira">
+                    <div class="project-image">
+                        <img src="images/projetos-reais/barreira_raiz_1.jpg" alt="Instalação de Barreira de Raiz">
+                        <div class="project-overlay">
+                            <div class="project-category">Barreira de Raiz</div>
+                            <a href="#project-barreira" class="view-project">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Proteção com Barreira de Raiz</h3>
+                        <p>Projeto Especial</p>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 -->
+                <div class="project-item" data-category="barreira">
+                    <div class="project-image">
+                        <img src="images/projetos-reais/barreira_raiz_2.jpg" alt="Instalação Completa de Barreira de Raiz">
+                        <div class="project-overlay">
+                            <div class="project-category">Barreira de Raiz</div>
+                            <a href="#project-barreira" class="view-project">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Instalação de Barreira de Contenção</h3>
+                        <p>São José dos Campos, SP</p>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="project-item" data-category="poda">
+                    <div class="project-image">
+                        <img src="images/stock/portfolio-6.jpg" alt="Poda de Formação em Parque">
+                        <div class="project-overlay">
+                            <div class="project-category">Poda Técnica</div>
+                            <a href="#project6" class="view-project">Ver Detalhes</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Poda de Formação em Parque</h3>
+                        <p>Sorocaba, SP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes dos Projetos (Modal) -->
+    <div id="project1" class="project-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Arborização de Avenida Central</h2>
+                <p class="project-location"><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+            </div>
+            <div class="modal-body">
+                <div class="project-gallery">
+                    <img src="images/stock/portfolio-1.jpg" alt="Arborização de Avenida Central" class="main-image">
+                    <div class="gallery-thumbs">
+                        <img src="images/stock/portfolio-1-detail-1.jpg" alt="Detalhe 1">
+                        <img src="images/stock/portfolio-1-detail-2.jpg" alt="Detalhe 2">
+                        <img src="images/stock/portfolio-1-detail-3.jpg" alt="Detalhe 3">
+                    </div>
+                </div>
+                <div class="project-details">
+                    <div class="detail-item">
+                        <h3>Desafio</h3>
+                        <p>Arborizar uma avenida central com grande fluxo de veículos e pedestres, considerando a infraestrutura urbana existente, como fiação elétrica, calçadas e tubulações subterrâneas.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Solução</h3>
+                        <p>Desenvolvimento de um projeto de arborização com espécies nativas de médio porte, adequadas ao ambiente urbano. Implementação de canteiros especiais com sistema de drenagem e proteção para as mudas.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Resultados</h3>
+                        <p>Plantio de 120 árvores ao longo de 2 km de avenida, com taxa de sobrevivência de 95% após um ano. Melhoria significativa no conforto térmico e estético da via, com redução de até 4°C na temperatura local durante o verão.</p>
+                    </div>
+                    <div class="detail-item">
+                        <h3>Depoimento do Cliente</h3>
+                        <blockquote>
+                            "A transformação da avenida foi impressionante. Além da beleza visual, percebemos uma melhoria na qualidade do ar e no conforto dos pedestres. O projeto foi executado com profissionalismo e atenção aos detalhes."
+                            <cite>- Secretaria de Meio Ambiente, Prefeitura de São Paulo</cite>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"A equipe da Arboriza realizou um trabalho excepcional na poda das árvores do nosso condomínio. Profissionais qualificados, equipamentos de primeira linha e um cuidado impressionante com a segurança e limpeza."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/stock/testimonial-1.jpg" alt="Cliente 1">
+                        </div>
+                        <div class="author-info">
+                            <h4>Carlos Mendes</h4>
+                            <p>Síndico de Condomínio</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"Contratamos a Arboriza para um laudo técnico de árvores em risco em nossa propriedade. O relatório foi detalhado, profissional e nos ajudou a tomar decisões importantes para garantir a segurança do local."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/stock/testimonial-2.jpg" alt="Cliente 2">
+                        </div>
+                        <div class="author-info">
+                            <h4>Ana Paula Silva</h4>
+                            <p>Gerente de Facilities</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <p>"O projeto de arborização desenvolvido pela Arboriza para nossa praça municipal superou todas as expectativas. As espécies selecionadas se adaptaram perfeitamente ao local e o resultado visual é incrível."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="images/stock/testimonial-3.jpg" alt="Cliente 3">
+                        </div>
+                        <div class="author-info">
+                            <h4>Roberto Almeida</h4>
+                            <p>Secretário de Meio Ambiente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <h2>Pronto para transformar seu espaço?</h2>
+            <p>Entre em contato conosco para uma avaliação personalizada do seu projeto.</p>
+            <a href="index.html#contato" class="btn">Solicite um Orçamento</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/logo.jpeg" alt="Arboriza - Engenharia e Arborização Urbana">
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2025 Arboriza - Todos os direitos reservados</p>
+                    <p>Engenharia e Arborização Urbana</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/visual-improvements.js"></script>
+</body>
+</html>
